@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Лаб. роб. 7</title>
+		<style>
+			select {
+				width: 100%;
+				padding: 16px 20px;
+				border: none;
+				border-radius: 10px;
+				background-color: #f1f1f1;
+			}
+			textarea {
+				width: 100%;
+				height: 120px;
+				padding: 12px 20px;
+				box-sizing: border-box;
+				border: 2px solid #ccc;
+				border-radius: 10px;
+				background-color: #f8f8f8;
+				resize: none;
+			}
+			input[type="text"] {
+				border: none;
+				border-bottom: 2px solid rgb(143, 136, 136);
+				padding: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Допоміжний файл</h1>
+		<h2>Використання форми</h2>
+		<form id="myForm" method="post" action="some_lab.html" target="_blank">
+			<fieldset>
+				<legend>Важливі дані</legend>
+				<label for="input1">input 1</label>
+				<input
+					style="font-size: 12px"
+					id="input1"
+					type="text"
+					value="значенням за замовчуванням,"
+				/><br />
+				<label for="input2">input 2</label>
+				<input id="input2" type="text" maxlength="8" />
+				<br />
+				<button type="submit">Відправити</button>
+				<button type="reset">Скасувати</button>
+			</fieldset>
+			<div>
+				<input type="radio" id="radio1" name="radioGroup" value="radio1" />
+				<label for="radio1">Value 1</label>
+
+				<input type="radio" id="radio2" name="radioGroup" value="radio2" />
+				<label for="radio2">Value 2</label>
+
+				<input type="radio" id="radio3" name="radioGroup" value="radio3" />
+				<label for="radio3">Value 3</label>
+
+				<input
+					type="radio"
+					id="radio4"
+					name="radioGroup"
+					value="radio4"
+					checked
+				/>
+				<label for="radio4">Value 4</label>
+
+				<input type="radio" id="5" name="radioGroup" value="5" />
+				<label for="5">Value 5</label>
+			</div>
+			<div>
+				<input
+					type="checkbox"
+					id="checkbox1"
+					name="checkbox1"
+					value="checkbox1"
+				/>
+				<label for="checkbox1">Value 1</label>
+				<input
+					type="checkbox"
+					id="checkbox2"
+					name="checkbox2"
+					value="checkbox2"
+				/>
+				<label for="checkbox2">Value 2</label>
+				<input
+					type="checkbox"
+					id="checkbox3"
+					name="checkbox3"
+					value="checkbox3"
+				/>
+				<label for="checkbox3">Value 3</label
+				><input
+					type="checkbox"
+					id="checkbox4"
+					name="checkbox4"
+					value="checkbox4"
+				/>
+				<label for="checkbox4">Value 4</label>
+			</div>
+			<div>
+				<select id="select" name="select" size="1">
+					<option value="option1">Value 1</option>
+					<option value="option2">Value 2</option>
+					<option value="option3">Value 3</option>
+					<option value="option4">Value 4</option>
+					<option value="option5">Value 5</option>
+					<option value="option6" selected>Value 6</option>
+					<option value="option7">Value 7</option>
+				</select>
+			</div>
+			<div>
+				<label for="date">Date field:</label>
+				<input
+					type="date"
+					id="date"
+					name="date"
+					min="2000-01-01"
+					max="2050-12-31"
+				/>
+			</div>
+		</form>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ipsa eveniet,
+			harum fuga odit, quia sapiente ea sequi recusandae delectus sit saepe
+			laudantium voluptatum? Quaerat obcaecati ea unde aliquid a dicta nisi
+			eligendi odit ratione perferendis. Aliquid, quam odit distinctio quasi
+			magnam repudiandae ullam? Vel totam laborum dolor? Ea quisquam ad dolor
+			aliquam error vitae et veritatis quam, sequi eos veniam dignissimos
+			accusantium! Rerum est blanditiis odio expedita laudantium recusandae
+			perspiciatis hic sit eaque eos possimus perferendis doloribus alias neque
+			vitae ipsam qui, sequi praesentium dolorem, libero rem. Voluptatum soluta
+			harum, laudantium quia expedita quis earum repudiandae asperiores quae
+			libero?
+		</p>
+		<textarea form="myForm" name="" id="" cols="30" rows="10"></textarea>
+	</body>
+</html>
